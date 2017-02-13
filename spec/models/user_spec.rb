@@ -4,7 +4,7 @@ RSpec.describe User, type: :model do
 
   it 'checks the name' do
 	@user = User.new
-	expect(@user.save).to eq(true)
+	expect(@user.save).to eq(false)
 	@user.name = 'Kakaroto'
 	expect(@user.save).to eq(true)
   end
